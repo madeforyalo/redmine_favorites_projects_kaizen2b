@@ -19,8 +19,4 @@ Redmine::Plugin.register :redmine_favorite_projects_kaizen2b do
        caption: :label_favorite_projects,
        if: proc { User.current.logged? }
 
-  # Bloque en "Mi página"
-  Redmine::MyPage.map do |my|
-    my.block 'favorite_projects', label: :label_favorite_projects
-  end
 end
