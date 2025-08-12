@@ -26,3 +26,4 @@ end
 
 # Hooks
 require_relative 'redmine_favorites/hooks/view_projects_show_right_hook'
+require_relative 'redmine_favorites/hooks/view_layouts_base_hook'
