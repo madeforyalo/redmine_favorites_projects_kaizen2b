@@ -5,7 +5,7 @@ require_relative 'lib/redmine_favorites_kaizen2b'
 
 Redmine::Plugin.register :redmine_favorites_projects_kaizen2b do
   name        'Favorites Projects (Kaizen2B)'
-  author      'Kaizen2B'
+  author      'Kaizen2B - Gonzalo Rojas'
   description 'Permite a cada usuario marcar proyectos como favoritos y accederlos rápido.'
   version     '0.1.0'
   url         'https://kaizen2b.com'
