@@ -6,10 +6,14 @@ require 'redmine'
 module RedmineFavoritesKaizen2b
 end
 
-# Hacer disponible el helper en cualquier vista (incluida la del proyecto)
+# Incluir el helper en TODAS las vistas
 Rails.configuration.to_prepare do
-  require_dependency File.expand_path('../app/helpers/favorites_helper', __dir__)
-  ActionView::Base.include ::FavoritesHelper
+  require_dependency Rails.root.join(
+    'plugins', 'redmine_favorites_projects_kaizen2b', 'app', 'helpers', 'favorites_helper'
+  ).to_s
+
+  # Hace disponibles los métodos de FavoritesHelper en todas las vistas
+  ApplicationController.helper ::FavoritesHelper
 end
 
 # Hooks
