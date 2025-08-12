@@ -22,7 +22,7 @@ class FavoritesController < ApplicationController
       flash[:notice] = l(:notice_project_favourited)
     end
 
-    redirect_back_or_default project_path(project)
+    redirect_back(fallback_location: project_path(project))
   end
 
   # Compat: no usamos create/destroy directos, pero quedan por si se requieren
