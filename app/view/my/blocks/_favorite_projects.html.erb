@@ -1,0 +1,11 @@
+<% projects = Project.active.joins("INNER JOIN favorite_projects fp ON fp.project_id = projects.id").where('fp.user_id = ?', User.current.id).order('projects.name') %>
+
+<% if projects.any? %>
+  <ul class="favorite-projects-block">
+    <% projects.each do |p| %>
+      <li><%= link_to p.name, project_path(p) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <em><%= l(:label_no_favorites) %></em>
+<% end %>

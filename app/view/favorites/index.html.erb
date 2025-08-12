@@ -1,0 +1,14 @@
+<h2><%= l(:label_favorite_projects) %></h2>
+
+<% if @projects.any? %>
+  <ul class="favorite-projects-list">
+    <% @projects.each do |p| %>
+      <li>
+        <%= link_to p.name, project_path(p) %>
+        <%= button_to l(:button_unfavourite), toggle_favorites_path(project_id: p.id), method: :post, class: 'icon icon-fav on mini' %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p><%= l(:label_no_favorites) %></p>
+<% end %>

@@ -1,0 +1,7 @@
+en:
+  label_favorite_projects: "Favourite projects"
+  label_no_favorites: "You have no favourite projects yet"
+  button_favourite: "Add to favourites"
+  button_unfavourite: "Remove from favourites"
+  notice_project_favourited: "Project added to favourites"
+  notice_project_unfavourited: "Project removed from favourites"

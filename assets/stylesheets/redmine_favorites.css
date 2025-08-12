@@ -1,0 +1,5 @@
+.favorite-project .icon-fav { margin-top: 6px; }
+.icon-fav.on { opacity: 1; }
+.icon-fav.off { opacity: 0.6; }
+.favorite-projects-list li { display: flex; gap: 8px; align-items: center; }
+.icon-fav.mini { padding: 2px 6px; font-size: 12px; }
