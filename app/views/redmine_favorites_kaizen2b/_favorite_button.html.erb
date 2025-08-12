@@ -1,17 +1,12 @@
 <% if User.current.logged? && defined?(@project) && @project.present? %>
   <div class="favorite-project">
     <% post_url = url_for(controller: 'favorites', action: 'toggle', project_id: @project.id, only_path: true) %>
+    <% is_fav = respond_to?(:favorite_for?) ? favorite_for?(@project) : FavoriteProject.exists?(user_id: User.current.id, project_id: @project.id) %>
 
-    <% if favorite_for?(@project) %>
-      <%= button_to l(:button_unfavourite),
-                    post_url,
-                    method: :post,
-                    class: 'icon icon-fav on' %>
+    <% if is_fav %>
+      <%= button_to l(:button_unfavourite), post_url, method: :post, class: 'icon icon-fav on' %>
     <% else %>
-      <%= button_to l(:button_favourite),
-                    post_url,
-                    method: :post,
-                    class: 'icon icon-fav off' %>
+      <%= button_to l(:button_favourite),  post_url, method: :post, class: 'icon icon-fav off' %>
     <% end %>
   </div>
 <% end %>
