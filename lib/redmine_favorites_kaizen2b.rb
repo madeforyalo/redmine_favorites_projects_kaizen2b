@@ -2,9 +2,9 @@
 
 require 'redmine'
 
-# Definimos el módulo para satisfacer a Zeitwerk
+# Constante que coincide con el nombre del archivo lib/redmine_favorites_kaizen2b.rb
 module RedmineFavoritesKaizen2b
 end
 
-# Cargar hooks
+# Cargamos el hook (ruta → namespace RedmineFavorites::Hooks)
 require_relative 'redmine_favorites/hooks/view_projects_show_right_hook'
