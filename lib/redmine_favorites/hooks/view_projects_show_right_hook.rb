@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RedmineFavorites
+module RedmineFavoritesKaizen2b
   module Hooks
     class ViewProjectsShowRightHook < Redmine::Hook::ViewListener
       # Inserta el botón en la vista del proyecto (columna derecha)

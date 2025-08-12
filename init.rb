@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Cargamos la inicialización del plugin (y definimos el módulo)
 require_relative 'lib/redmine_favorites_kaizen2b'
 
 Redmine::Plugin.register :redmine_favorites_projects_kaizen2b do
