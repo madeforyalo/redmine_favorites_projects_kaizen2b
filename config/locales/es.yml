@@ -1,4 +1,10 @@
 es:
+  label_favorite_projects: "Proyectos favoritos"
+  label_no_favorites: "No tenés proyectos favoritos aún"
+  button_favourite: "Marcar favorito"
+  button_unfavourite: "Quitar de favoritos"
+  notice_project_favourited: "Proyecto marcado como favorito"
+  notice_project_unfavourited: "Proyecto quitado de favoritos"
   my:
     blocks:
       favorite_projects: "Proyectos favoritos"
