@@ -2,6 +2,7 @@
 
 class FavoritesController < ApplicationController
   before_action :require_login
+  respond_to :html, :json
 
   def index
     @projects = Project.active.joins("INNER JOIN favorite_projects fp ON fp.project_id = projects.id")
