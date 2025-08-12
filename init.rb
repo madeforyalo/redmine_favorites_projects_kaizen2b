@@ -8,8 +8,8 @@ Redmine::Plugin.register :redmine_favorites_projects_kaizen2b do
   author      'Kaizen2B - Gonzalo Rojas'
   description 'Permite a cada usuario marcar proyectos como favoritos y accederlos rápido.'
   version     '0.1.0'
-  url         'https://kaizen2b.com'
-  author_url  'https://kaizen2b.com'
+  url         'https://github.com/madeforyalo/redmine_favorites_projects_kaizen2b'
+  author_url  'https://github.com/madeforyalo/redmine_favorites_projects_kaizen2b'
   requires_redmine version_or_higher: '6.0.0'
 
   # Menú superior opcional
