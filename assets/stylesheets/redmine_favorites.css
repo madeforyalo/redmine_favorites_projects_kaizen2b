@@ -8,13 +8,12 @@
   background: transparent;
   cursor: pointer;
   margin-right: 6px;
-  padding: 0 2px;
-  font-size: 18px;      /* pedido */
+  font-size: 18px;
   line-height: 1;
-  opacity: 0.4;         /* gris por defecto */
-  position: relative;   /* para stacking */
-  z-index: 1000;        /* por encima de overlays de tarjeta */
-  pointer-events: auto; /* asegurar que reciba el click */
+  opacity: 0.4;     /* gris */
+  padding: 0 2px;
 }
-.kzn-fav-star.on { opacity: 1; }
+.kzn-fav-star.on {
+  opacity: 1;       /* activa */
+}
 .kzn-fav-star:focus { outline: 1px dotted; }
